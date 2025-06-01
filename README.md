@@ -21,12 +21,14 @@
 3. Pandas for Pipeline/ Data Handling.
 4. Google Looker Studio for Visualization.
 
-#### 1. Web Scraping IMDb
+--- 
+
+#### 1. Ingestion Layer
 a. Target Page: 
 Please note that I used TMDB instead: https://www.themoviedb.org/
 
-
-b. Data Points| Category                    | Data Points                                                                                 |
+b. Data Points| Category                    
+| Data Points                                                                                 |
 | --------------------------- | ------------------------------------------------------------------------------------------- |
 | 🎬 **Core Info**            | `id`, `title`, `original_title`, `release_date`, `runtime`, `status`, `tagline`, `overview` |
 | 🌐 **Language/Country**     | `original_language`, `spoken_languages`, `production_countries`                             |
@@ -43,6 +45,7 @@ pip install pandas
 pip install tmdb
 python data_scrapping.py
 ```
+---
 
 #### 2. Analysis Layer
 ##### Storing in Google BigQuery
@@ -78,6 +81,7 @@ Project Link: https://console.cloud.google.com/bigquery?p=bigquery-public-data&d
   ORDER BY vote_average DESC
   LIMIT 20;
 ```
+---
 
 #### 3. Presentation Layer
 ##### Interactive Dashboards (Google Looker Studio)
