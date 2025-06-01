@@ -2,7 +2,9 @@
 ## IMDb Data Pipeline & Analysis
 
 ### Project Overview
-#### Scope
+This project addresses the challenge of discovering deeper insights from movie data across thousands of titles by collecting and organizing a rich set of attributes from The Movie Database (TMDB) and IMDb.
+
+#### 📌Scope
 ##### a. Ingestion
 - Target: Scrape a few hundred movies from IMDb.
 - Attributes: Extract 20–30 attributes per movie.
@@ -15,7 +17,7 @@
 - Tools: Google Looker Studios
 - Goal: Build easy-to-use tools for end-users to explore and analyze the data.
 
-#### Tools & Technology
+#### 🔧Tools & Technology
 1. Python (pip manager) for scraping.
 2. Google BigQuery for Storage and Analysis.
 3. Pandas for Pipeline/ Data Handling.
@@ -27,17 +29,15 @@
 a. Target Page: 
 Please note that I used TMDB instead: https://www.themoviedb.org/
 
-b. Data Points| Category                    
-| Data Points                                                                                 |
-| --------------------------- | ------------------------------------------------------------------------------------------- |
-| 🎬 **Core Info**            | `id`, `title`, `original_title`, `release_date`, `runtime`, `status`, `tagline`, `overview` |
-| 🌐 **Language/Country**     | `original_language`, `spoken_languages`, `production_countries`                             |
-| 💸 **Financials**           | `budget`, `revenue`                                                                         |
-| 🌟 **Popularity & Ratings** | `vote_average`, `vote_count`, `popularity`, `adult`                                         |
-| 🧑‍💼 **People**            | `director`, `cast`                                                                          |
-| 🏢 **Companies**            | `production_companies`                                                                      |
-| 🖼️ **Media Assets**        | `backdrop_path`, `poster_path`, `homepage`, `imdb_id`                                       |
-| 🧾 **Categorization**       | `genres`                                                                                    |
+b. Data Points                    
+🎬 **Core Info**: `id`, `title`, `original_title`, `release_date`, `runtime`, `status`, `tagline`, `overview`  
+🌐 **Language/Country**: `original_language`, `spoken_languages`, `production_countries`  
+💸 **Financials**: `budget`, `revenue`  
+🌟 **Popularity & Ratings**: `vote_average`, `vote_count`, `popularity`, `adult`  
+🧑‍💼 **People**: `director`, `cast`  
+🏢 **Companies**: `production_companies`  
+🖼️ **Media Assets**: `backdrop_path`, `poster_path`, `homepage`, `imdb_id`  
+🧾 **Categorization**: `genres`  
 
 c. Setup and Run
 ```bash
